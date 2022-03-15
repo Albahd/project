@@ -1,0 +1,232 @@
+
+
+[
+        {
+            "name": "Bacchus Frambozenbier",
+            "tag": "Acid",
+            "description": "Cerveza belga dulce, ácida y afrutada de estilo Flanders Red Ale elaborada con frambuesas.",
+            "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/11/IMG_20201127_174646-550x550.jpg",
+            "tipo": "Oud Bruin",
+            "origen":"Bélgica",
+            "abv":5
+
+        },
+        {
+            
+                "name": "Fauve Les Cerisiers De Mai",
+                "tag": "Acid",
+                "description": "Pastry Sour elaborada con lactosa, cerezas, vainilla y haba tonka.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2022/03/IMG-20220302-WA0027-550x550.jpg",
+                "tipo": "Pastry Sour",
+                "origen":"Francia",
+                "abv":6.5
+    
+            },
+
+            {
+            
+                "name": "Lo Vilot Farm True Blood",
+                "tag": "Acid",
+                "description": "Cerveza ácida elaborada con frambuesas y cacao.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/12/IMG_20220121_003603-550x550.jpg",
+                "tipo": "Imperial Fruit Sour",
+                "origen":"Cataluña",
+                "abv":8
+    
+            },
+            {
+            
+                "name": "Vault City Mango Session Sour",
+                "tag": "Acid",
+                "description": "Cerveza Sour con Mango.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2022/01/IMG_20220128_153957-550x550.jpg",
+                "tipo": "Fruit Sour",
+                "origen":"Escocia",
+                "abv":4.5
+    
+            },
+            {
+            
+                "name": "Oud Beersel Frambois",
+                "tag": "Acid",
+                "description": "El uso de las auténticas frambuesas y el Lambic envejecido en barriles de madera, es el resultado de una cerveza excepcionalmente sutil y refrescante.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/12/IMG_20201208_214025-550x550.jpg",
+                "tipo": " Fruit Lambic",
+                "origen":"Bélgica",
+                "abv":5
+    
+            },
+
+            {
+            
+                "name": "Baobeer B&W Colobus",
+                "tag": "Black",
+                "description": "Porter con lactosa y cacao de Tanzania.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/11/IMG-20211230-WA0019-550x550.jpg",
+                "tipo": "Porter",
+                "origen":"País Vasco",
+                "abv":6.6
+    
+            },
+            {
+            
+                "name": "Basqueland Into the Abyss",
+                "tag": "Black",
+                "description": "Pastry Stout acondicionada con lactosa, coco tostado, vainilla de Madagascar e infusionado con ramas de canela cassia.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/11/IMG_20220109_002056-550x550.jpg",
+                "tipo": "Pastry Stout",
+                "origen":"País Vasco",
+                "abv":10
+    
+            },
+            {
+            
+                "name": "Brasserie 28 Imperial Stout",
+                "tag": "Black",
+                "description": "Ligera a pesar de su graduación alcohólica potente.Sabor a maltas tostadas, chocolate, café, frutas negras y ligeramente ahumado.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/11/IMG_20201121_220523-550x550.jpg",
+                "tipo": "Imperial Stout",
+                "origen":"Bélgica",
+                "abv":12
+    
+            },
+            {
+            
+                "name": "Guineu Vanilla Black Velvet 2021",
+                "tag": "Black",
+                "description": "Cerveza con mucho cuerpo y sabor potente pero que ofrece un ‘trago de terciopelo’. Destaca el sabor de la vainilla, de vaina de Madagascar, por encima de tostados, cacao y notas de café.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/03/IMG-20210303-WA0039-550x550.jpg",
+                "tipo": "Imperial Stout",
+                "origen":"Madrid",
+                "abv":10
+    
+            },
+
+
+            {
+            
+                "name": "Nepomucen Jean-Michel",
+                "tag": "Black",
+                "description": "Stout con café de Brasil, coco y vainilla.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/11/IMG_20220109_002045-550x550.jpg",
+                "tipo": "Coffe Stout",
+                "origen":"Polonia",
+                "abv":8.5
+    
+            },
+
+
+
+            {
+            
+                "name": "Dougall’s 942",
+                "tag": "Revolution",
+                "description": " Pale Ale sin gluten. De color rubio dorado y ligeramente turbia es una cerveza aromática con apuntes cítricos, florales y afrutada que nos acercan al Mango. Es una cerveza muy suave y equilibrada.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/11/IMG_20201127_215547-550x550.jpg",
+                "tipo": "Pale Ale",
+                "origen":"Cantabria",
+                "abv":4.2
+    
+            },
+            
+            {
+            
+                "name": "Drunken Bros Shannon",
+                "tag": "Revolution",
+                "description": " West Coast Ipa con lúpulos Chinook, Ekuanot y Amarillo.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/12/IMG-20220304-WA0016-550x550.jpg",
+                "tipo": "IPA",
+                "origen":"Pais Vasco",
+                "abv":6.8
+    
+            },
+           
+            {
+            
+                "name": "FrauGruber Cloak of Feathers",
+                "tag": "Revolution",
+                "description": "Dipa turbia con lúpulos Mosaic Spectrum, Galaxy, Simcoe, Rakau y Citra BBC.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2022/02/IMG-20220226-WA0016-550x550.jpg",
+                "tipo": "IPA",
+                "origen":"Alemania",
+                "abv":8.6
+    
+            },
+            {
+            
+                "name": "FrauGruber Cloak of Feathers",
+                "tag": "Revolution",
+                "description": "Dipa turbia con lúpulos Mosaic Spectrum, Galaxy, Simcoe, Rakau y Citra BBC.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2022/02/IMG-20220226-WA0016-550x550.jpg",
+                "tipo": "IPA",
+                "origen":"Alemania",
+                "abv":8.6
+    
+            },
+            {
+            
+                "name": "Espiga Blonde Ale (sin gluten)",
+                "tag": "Revolution",
+                "description": "Pale Ale sin gluten con lúpulos Mosaic, Cascade & Citra. Toques cítricos y tropicales.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/12/6D2E9E1D-A26E-4237-8F1C-0E0D7EC929D6-550x550.jpeg",
+                "tipo": "Pale Ale",
+                "origen":"Cataluña",
+                "abv":6.5
+    
+            },
+            {
+            
+                "name": "Belgian Dark Strong Ale",
+                "tag": "Fuertes",
+                "description": " Color marrón oscuro rojizo. Aromas a caramelo, moka y chocolate, especias. Sabor dulce a fruta madura, pan, especias. Muy equilibrada.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/IMG_20201127_173907-550x550.jpg",
+                "tipo": "Belgian Dark Strong Ale",
+                "origen":"Bélgica",
+                "abv":9
+    
+            },
+            {
+            
+                "name": "Achel Blonde",
+                "tag": "Fuertes",
+                "description": "Cerveza Trapense. Densa, dulce y amarga a lúpulo, con notas cítricas. Achel es una de las seis cerveceras oficialmente trapenses que existen en Bélgica. En esta cerveza además de la tradición contenida de añoselaboración podrás encontrar un producto complejo de sabor fuerte, frutal y lupulada. Una cerveza sabrosa y sorprendentemente refrescante pese a tener 8% de alcohol.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/11/IMG_20201127_174009-550x550.jpg",
+                "tipo": "Belgian Strong Ale",
+                "origen":"Bélgica",
+                "abv":8
+    
+            },
+            {
+            
+                "name": "Gulden Draak 9000 Quadruple",
+                "tag": "Fuertes",
+                "description": "Color dorado profundo entre ambarino y rubio que al verter en su copa presenta una voluptuosa capa de espuma. En nariz están muy presentes sus 3 tipos de maltas con 4 veces más cantidad de lo normal. Aromas frutales a plátano y algo de caramelo. La riqueza y complejidad de sabores tiene un inicio cítrico con ligero dulzor evolucionando hacia frutos secos y plátano con sensación alcohólica. Se emplea una levadura vinícola que aporta este sabor inigualable.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/03/IMG_20210319_224551-550x550.jpg",
+                "tipo": "Belgian Dark Strong Ale",
+                "origen":"Bélgica",
+                "abv":10.5
+    
+            },
+            {
+            
+                "name": "La Trappe Quadrupel",
+                "tag": "Fuertes",
+                "description": "Quadrupel es la cerveza más fuerte de La Trappe con un agradable color ámbar. Su sabor cálido e intenso está correcta y completamente equilibrado. Cebada dulce, suavemente destilada y agradable amargor con un regusto dulce. Quadrupel refermenta en botella y proporciona aromas como plátano, almendra y vainilla, entre otros.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/D84EF004-6F74-4AA9-A28D-B931050EF05C-550x550.jpeg",
+                "tipo": "Belgian Quadrupel",
+                "origen":"Holanda",
+                "abv":10
+    
+            },
+            {
+            
+                "name": "Charles Quint Blond",
+                "tag": "Fuertes",
+                "description": "Quadrupel es la cerveza más fuerte de La Trappe con un agradable color ámbar. Su sabor cálido e intenso está correcta y completamente equilibrado. Cebada dulce, suavemente destilada y agradable amargor con un regusto dulce. Quadrupel refermenta en botella y proporciona aromas como plátano, almendra y vainilla, entre otros.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/IMG_20201121_234407-550x735.jpg",
+                "tipo": "Belgian Strong Ale",
+                "origen":"Holanda",
+                "abv":8.5
+    
+            }
+        ]
