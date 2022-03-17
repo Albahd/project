@@ -1,0 +1,15 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+
+
+.App {
+  text-align: center;
+  color:var(--color-typography)
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+

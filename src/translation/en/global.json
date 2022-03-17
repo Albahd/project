@@ -1,0 +1,19 @@
+{
+    
+    "header":{
+        "link1":"Tell me who you are and I'll tell you what you drink...",
+        "link2":"Let's go for a beer",
+        "link3":"Change the theme!"
+        
+        
+    },
+    "login":{
+        "email":"Email",
+        "password":"Password",
+        "boton":"Submit",
+        "name":"Name",
+        "age":"Age"
+    }
+
+
+}

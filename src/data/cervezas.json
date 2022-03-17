@@ -228,5 +228,117 @@
                 "origen":"Holanda",
                 "abv":8.5
     
+            },
+            {
+            
+                "name": "Augustiner Helles",
+                "tag": "Clasic",
+                "description": "Lagerbier Hell es una cerveza elaborada en Munich en Augustiner Bräu, una de las cervecerías más antiguas de la ciudad. Esta Munich Helles es una cerveza de baja fermentación, una gran corona de espuma y muy refrescante. Aroma suave a lúpulo herbaceo y cítrico. En boca tiene notas a malta con un punto final dulce.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/IMG_20201124_220212-550x550.jpg",
+                "tipo": "Lager Hell",
+                "origen":"Alemania",
+                "abv":5.2
+    
+                
+            },
+            {
+            
+                "name": "Blanche de Namur",
+                "tag": "Clasic",
+                "description": "Cerveza de trigo belga (estilo Witbier o Blanche) de 4.5% ABV aromatizada con piel de naranja y semillas de cilantro. Muy suave y refrescante Color: amarillo pajizo Aroma: cítricos, especiados (semilla de cilantro), sabor a cereal ligeramente dulce.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/03251D33-C52C-47A0-8B9C-CC04FEA8A9FA-550x550.jpeg",
+                "tipo": "Trigo",
+                "origen":"Bélgica",
+                "abv":4.5
+    
+            },
+            {
+            
+                "name": "Weihenstephaner HefeWeissbier",
+                "tag": "Clasic",
+                "description": "Cerveza de trigo estilo Hefeweizen. De color amarillento, con espuma densa y abundante, cuerpo medio y aspecto turbio. Aromas típicos de estilo, a plátano y a clavo.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/6646491E-6CFC-41F4-ADB0-29115507D024-550x550.jpeg",
+                "tipo": "Trigo",
+                "origen":"Alemania",
+                "abv":5.4
+    
+            },
+            {
+            
+                "name": "ABK Hell",
+                "tag": "Clasic",
+                "description": "Cerveza ligera, brillante y muy satisfactoria. Ligeramente dorada, con aromas suaves y dulce con notas a cereal y lúpulos muy florales. El sabor es de grano con cuerpo. Toques a manzana verde y ligeros pero persistentes toques de y hierbas con ligero amargor final.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/8DB6D201-35AF-4361-8B66-3B8644F50415-550x550.jpeg",
+                "tipo": "Lager Hell",
+                "origen":"Alemania",
+                "abv":5
+    
+            },
+            {
+            
+                "name": "Ayinger Lager Hell",
+                "tag": "Clasic",
+                "description": " Lager Hell de Ayinger es un cerveza artesanal de estilo Dortmunder. Lager Hell es la típica cerveza que se bebe a diario en Bavaria. Lager Hell es muy refrescante, suave y sedosa. El equilibrio perfecto entre sabor y aroma.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2020/10/94BE2358-6E26-422B-BC30-8F89B160D96E-550x550.jpeg",
+                "tipo": "Lager Hell",
+                "origen":"Alemania",
+                "abv":4.9
+    
+            },
+            {
+            
+                "name": "Naparbier Crazy Brown",
+                "tag": "Sweet",
+                "description": "Imperial Brown Ale con Lúpulos: H. Hersbucker y Tettnanger. Crazy Brown, una cerveza maltosa y lupulada en la que se pueden apreciar sabores a chocolate y nueces.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/11/IMG_20220109_002246-550x550.jpg",
+                "tipo": "Brown Ale",
+                "origen":"Navarra",
+                "abv":8.7
+    
+            },
+            {
+            
+                "name": "Oddity Time On Calm",
+                "tag": "Sweet",
+                "description": "Brown Ale colaboración con Oddity.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/11/IMG-20211230-WA0025-550x550.jpg",
+                "tipo": "Brown Ale",
+                "origen":"Cataluña",
+                "abv":8
+    
+            },
+            {
+            
+                "name": "Cigar City Maduro Brown Ale",
+                "tag": "Sweet",
+                "description": "Brown ale con aromas a caramelo, chocolate y algo de café con final seco.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/07/IMG_20210710_182220-550x550.jpg",
+                "tipo": "Brown Ale",
+                "origen":"Estados Unidos",
+                "abv":5.5
+    
+            },
+            {
+            
+                "name": "Drunken Bros Kill Mister",
+                "tag": "Sweet",
+                "description": "Barley Wine madurada en barricas de Whisky. Aromas a frutas pasas y dátiles. En boca es densa y sabrosa, con sabores complejos que van desde el caramelo tostado, tofee, uvas pasas, datiles, fruta madura y galleta.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/09/IMG-20220215-WA0018-550x550.jpg",
+                "tipo": "Barley Wine",
+                "origen":"Pais Vasco",
+                "abv":12.5
+    
+            },
+            {
+            
+                "name": "Drunken Bros Kill Mister",
+                "tag": "Sweet",
+                "description": "Color marrón oscuro. Aromas a maltas caramelo, frutos secos, frutas pasas, café y final licoroso.",
+                "img": "https://www.labuenacerveza.com/wp-content/uploads/2021/03/IMG_20210304_190531-550x550.jpg",
+                "tipo": " Belgian Dark Strong Ale",
+                "origen":"Bélgica",
+                "abv":10
+    
             }
+         
         ]

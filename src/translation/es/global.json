@@ -1,0 +1,16 @@
+{
+    
+    "header":{
+        "link1":"Dime quién eres y te diré qué bebes...",
+        "link2":"Vámonos de birras",
+        "link3":"Cámbiame el tema!"
+    },
+    "login":{
+        "email":"Email",
+        "password":"Contraseña",
+        "boton":"Guardar",
+        "name":"Nombre",
+        "age":"Edad"
+    }
+
+}
