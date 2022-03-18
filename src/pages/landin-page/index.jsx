@@ -8,24 +8,21 @@ import './style.css'
 function LandingPage() {
 
     return (
+    
 
-        <div className="main">
-            <Container className="main-pageContainer" fluid >
+            <div className="">
 
-                <Container fluid className="header-cont" >
-                    <Row >
-                        <Col lg={12}><Navegador></Navegador></Col>
-                    </Row>
-                </Container>
-            </Container>
-            <Container className="fore-cont">
+            <Container className="fore-cont main">
                 <Row>
                     <Col lg={12}>
-                        {/* <div className="title">Alegría de ViBeer</div> */}
+                        
                     </Col>
                 </Row>
             </Container>
+
+
         </div>
+    
 
 
     )

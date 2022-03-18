@@ -11,6 +11,13 @@
         "boton":"Guardar",
         "name":"Nombre",
         "age":"Edad"
+    },
+    "Select":{
+        "card1":"Mi puntito Ácido",
+        "card2": "Todo al Negro",
+        "card3": "Los Clásicos nunca fallan...",
+        "card4": "Soy un caramelito"
     }
+
 
 }

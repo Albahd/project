@@ -1,7 +1,10 @@
 
 .main{
 
-    background-image:"dsfasdf"
+    background-image:url("../../assets/img/fondo.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 
 }
 

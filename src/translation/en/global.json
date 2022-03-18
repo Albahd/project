@@ -13,7 +13,13 @@
         "boton":"Submit",
         "name":"Name",
         "age":"Age"
-    }
+    },
 
+    "Select":{
+        "card1": "My Acid Dot",
+        "card2": "Todo al Negro",
+        "card3": "Classics never fail...",
+        "card4": "I'm a candy"
+    }
 
 }
