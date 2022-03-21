@@ -1,19 +1,40 @@
 
 .main{
 
-    background-image:url("../../assets/img/fondo.jpg");
-    background-size: cover;
+    background-image:url("../../assets/img/fondo.playa.jpg");
+    background-size: cover; 
     height: 100vh;
-    width: 100%;
+    min-width: 100vh;
+    font-family: 'satoshi'
+
+  
 
 }
 
 
 .title{
+padding-top: 4%;
+color:#f7f7f7;
+font-family: 'highv';
+opacity: 0.6;
 
-font-size: 10vh;
-color:black;
 
 
+
+}
+.title-1{
+    padding-left:3%;
+}
+
+.title-2{
+    padding-left:5%;
+    
+
+}
+.title-3{
+    padding-left:7%
+}
+.title-4{
+    padding-left:9%
 
 }

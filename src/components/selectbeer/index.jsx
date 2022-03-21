@@ -1,7 +1,10 @@
 import negra from "../../assets/img/negra.jpg"
 import acida from "../../assets/img/neon.jpg"
-import clasico from "../../assets/img/clasico.jpg"
-import dulce from "../../assets/img/dulce.jpg"
+import clasico from "../../assets/img/clasico.png"
+import dulce from "../../assets/img/dulce.png"
+import vaso from"../../assets/img/vaso.png"
+import cajas from "../../assets/img/cajas.png"
+import belga from "../../assets/img/belga.png"
 import DetailCard from "../detailcard"
 import Container  from "react-bootstrap/Container"
 import  Row from "react-bootstrap/Row"
@@ -10,15 +13,16 @@ import './style.css'
 import { useTranslation } from 'react-i18next';
 import { useContext } from "react"
 import { IdiomContext } from "../../context/createcontext"
+import { useLocation } from "react-router-dom"
 
 
 
 
 const clasif = [
     {
-        tag: "Acid,Revolution",
+        tag: "Acid",
         sentence: "Mi puntito Ácido",
-        img:acida
+        img:vaso
 
 
     },
@@ -30,7 +34,7 @@ const clasif = [
 
     },
     {
-        tag: "Klasikos,Belga",
+        tag: "Klasikos",
         sentence: "Los Clásicos nunca fallan",
         img: clasico
 
@@ -42,7 +46,21 @@ const clasif = [
         img: dulce,
 
 
-    }
+    },
+    {
+        tag: "Revolution",
+        sentence: "Hipster Beer",
+        img:cajas
+
+
+    },
+    {
+        tag: "Belga",
+        sentence: "Desde Bélgica con Amor",
+        img:belga
+
+
+    },
 ]
 
 
@@ -51,11 +69,13 @@ function SelectBeer(props) {
     console.log(props.beers)
     const [lng, updateLng] = useContext(IdiomContext)
 const [t, i18n] = useTranslation("global");
+
  
 
     return (
-        <Container >
+    
             <div className="card-select-list">
+                <Container>
             <Row lg={2}>
               
   
@@ -69,9 +89,9 @@ const [t, i18n] = useTranslation("global");
          )}
          
          </Row>
+         </Container>
          </div>
-       
-        </Container>
+   
     )
 
 }

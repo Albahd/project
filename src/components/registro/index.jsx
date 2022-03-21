@@ -26,6 +26,7 @@ function Register() {
           password: e.target.password.value,
           name: e.target.name.value,
           age: e.target.age.value,
+         
 
 
       }
@@ -60,24 +61,25 @@ function Register() {
 
     <Form onSubmit={handlerSubmit}>
          <Form.Group className="mb-3" controlId="formBasicname">
-        <Form.Label>{t("login.name")}</Form.Label>
-        <Form.Control type="text" name="name" placeholder={t("login.name")} />
+        <Form.Label>{t("login.username")}</Form.Label>
+        <Form.Control type="text" name="name" placeholder={t("login.username")} />
+      </Form.Group>
+      {/* <Form.Group className="mb-3" controlId="formBasicUser">
+        <Form.Label>{t("login.username")}</Form.Label>
+        <Form.Control name="ursername" type="text" placeholder={t("login.username")} />
+      </Form.Group> */}
+     
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>{t("login.email")}</Form.Label>
+        <Form.Control name="email" type="email" placeholder={t("login.email")} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicage">
         <Form.Label>{t("login.age")}</Form.Label>
         <Form.Control name="age" type="number" placeholder={t("login.age")} />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>{t("login.email")}</Form.Label>
-        <Form.Control name="email" type="email" placeholder={t("login.email")} />
-      </Form.Group>
-
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>{t("login.password")}</Form.Label>
-        <Form.Control name="password" type="password" placeholder={t("login.password")} />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Control name="password" type="password" placeholder={t("login.rpassword")} />
       </Form.Group>
       <Button variant={theming.primary} type="submit">
       {t("login.boton")}

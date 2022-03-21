@@ -1,5 +1,15 @@
 .nav{
 display: flex;
+opacity: 0.9;
+
+
+}
+
+.selectors{
+  padding-left: 5%;
+  opacity: 0.65;
+
+
 
 
 }

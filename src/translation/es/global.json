@@ -8,15 +8,40 @@
     "login":{
         "email":"Email",
         "password":"Contraseña",
+        "rpassword":"Repite la Contraseña",
         "boton":"Guardar",
         "name":"Nombre",
-        "age":"Edad"
+        "age":"Edad",
+        "username":"Usuario"
     },
     "Select":{
         "card1":"Mi puntito Ácido",
         "card2": "Todo al Negro",
         "card3": "Los Clásicos nunca fallan...",
         "card4": "Soy un caramelito"
+    },
+    "Footer":{
+        "f1":"Alegría de Vibeer recomienda un consumo responsable"
+
+
+    },
+    "Event":{
+
+        "e1":"Nombre",
+        "e2":"Describe el evento..."
+    },
+    "landing":{
+        "l1":"El primer trago del viernes",
+        "l2":"La comida con la familia",
+        "l3":"Un brindis con los amigos..."
+
+    },
+    "not":{
+        "n1":"Te pasaste de alegría ",
+        "n2": "Not Found"
+        
+
+
     }
 
 

@@ -10,9 +10,11 @@
     "login":{
         "email":"Email",
         "password":"Password",
+        "rpassword":" Repeat Password",
         "boton":"Submit",
         "name":"Name",
-        "age":"Age"
+        "age":"Age",
+        "username":"User"
     },
 
     "Select":{
@@ -20,6 +22,27 @@
         "card2": "Todo al Negro",
         "card3": "Classics never fail...",
         "card4": "I'm a candy"
+    },
+    "Footer":{
+        "f1": "Alegría de Vibeer recommends responsible consumption"
+
+
+    },
+    "Event":{
+        "e1": "Name",
+        "e2": "Describe the event..."
+    },
+    "landing":{
+        "l1": "The first drink on Friday",
+        "l2": "Lunch with the family",
+        "l3": "A toast with friends..."
+
+    },
+     "not":{
+        "n1": "You overdid it with joy ",
+        "n2": "Not Found"
+
+
     }
 
 }

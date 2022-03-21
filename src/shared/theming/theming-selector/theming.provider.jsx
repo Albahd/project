@@ -5,7 +5,7 @@ import { ThemingContext } from "./theming.context"
 
 const light={
     primary:"primary",
-    dark:"dark"
+    dark:"dark",
 
 
 }
@@ -23,6 +23,7 @@ const dark={
 function ThemingProvider({children}) {
 
     const [theming, updateTheming] = useState(light);
+    let [logName,setLogName] = useState('')
     const changeTheme = () =>
     {
         updateTheming( v => v === light? dark: light)
@@ -32,7 +33,7 @@ function ThemingProvider({children}) {
 
     return (
 
-        <ThemingContext.Provider value={[theming, updateTheming,changeTheme]}>
+        <ThemingContext.Provider value={[theming, updateTheming,changeTheme, logName,setLogName]}>
             {children}
 
         </ThemingContext.Provider>

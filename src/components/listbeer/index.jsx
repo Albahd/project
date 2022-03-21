@@ -7,6 +7,7 @@ import CardBeer from "../cardbeer";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import './style.css'
 
 
 function ListBeer(props) {
@@ -31,6 +32,7 @@ function ListBeer(props) {
 
   return (
 
+<div className="list-beer">
 <Container >
   <Row>
 
@@ -46,7 +48,7 @@ console.log(v)
  
      </Row>
 </Container>
-
+</div>
 
   )
 

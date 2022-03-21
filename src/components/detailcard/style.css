@@ -1,4 +1,23 @@
+.card-select{
+
+    padding-top: 6%;
+    
+}
+
 .card-select:hover{
     transform: scale(0.98);
 
+}
+
+
+.card-h2{
+    display: flex;
+    color:#676767;
+    font-family:'highv';
+    opacity: 0.9;
+    padding-top: 5px;
+    justify-content: center;
+   
+
+    
 }
