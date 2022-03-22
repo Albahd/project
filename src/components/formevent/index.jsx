@@ -14,17 +14,37 @@ function FormEvent() {
     const [lng, updateLng] = useContext(IdiomContext)
     const [t, i18n] = useTranslation("global");
     console.log(theming)
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1; //January is 0!
+    let yyyy = today.getFullYear();
+    
+    if (dd < 10) {
+       dd = '0' + dd;
+    }
+    
+    if (mm < 10) {
+       mm = '0' + mm;
+    } 
+        
+    today = yyyy + '-' + mm + '-' + dd;
+
+    console.log(typeof today)
+    
+  
   
   
     let [Userdata, UpdateData] = useState([])
   
     const handlerSubmit = e => {
-        e.preventDefault();
+        // e.preventDefault();
         // console.log(e.target)
         const event = {
           
-           name: e.target.email.value,
+           name: e.target.name.value,
            event: e.target.event.value,
+           date: e.target.date.value,
+    
   
   
         }
@@ -53,14 +73,18 @@ function FormEvent() {
   return (
 <Container>
   <Row>
-    <Col xs={12} s={8} m={6} lg={4}>
+    <Col xs={12} s={8} m={6} lg={6}>
     <Form onSubmit={handlerSubmit}>
-         <Form.Group className="mb-3" controlId="formBasicname">
+         <Form.Group className="mb-3, color:black" controlId="formBasicname">
         <Form.Label>{t("Event.e1")}</Form.Label>
         <Form.Control type="text" name="name" placeholder={t("Event.e1")} />
       </Form.Group>
+      <Form.Group className="mb-3, color:black" controlId="formBasicdate">
+        <Form.Label>{t("Event.e9")}</Form.Label>
+        <Form.Control type="date" name="date" placeholder={t("Event.e9")} min={today}/>
+      </Form.Group>
       <FloatingLabel controlId="floatingTextarea2" label={t("Event.e2")}>
-    <Form.Control name="event"
+    <Form.Control className="mt-2" name="event"
       as="textarea"
       placeholder={t("Event.e2")}
       style={{ height: '100px' }}

@@ -1,0 +1,21 @@
+.total-event{
+
+
+    background-image:url("../../assets/img/bar1.jpg");
+    background-size:cover;
+     min-height: 100vh;
+    min-width: 100vh;
+    opacity: 0.9;
+    font-family:'highv';
+
+
+}
+
+
+.events-title{
+    font-size:4rem;
+ display:flex;
+ justify-content: center;
+
+
+}

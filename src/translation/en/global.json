@@ -14,7 +14,8 @@
         "boton":"Submit",
         "name":"Name",
         "age":"Age",
-        "username":"User"
+        "username":"User",
+        "boton2":"Register"
     },
 
     "Select":{
@@ -24,14 +25,25 @@
         "card4": "I'm a candy"
     },
     "Footer":{
-        "f1": "Alegría de Vibeer recommends responsible consumption"
+        "f1": "Alegría de Vibeer recommends responsible consumption",
+        "f2":"Don't forget to follow us!"
 
 
     },
     "Event":{
         "e1": "Name",
-        "e2": "Describe the event..."
+        "e2": "Describe the event...",
+        "e3":"Event created by",
+        "e4": "Event description",
+        "e5": "Users signed up",
+        "e6":"Sign up!",
+        "e7":"A few beers? come on! ",
+        "e8": "You choose where we go to ViBeer",
+        "e9": "Date"
+
     },
+
+    
     "landing":{
         "l1": "The first drink on Friday",
         "l2": "Lunch with the family",
@@ -40,7 +52,8 @@
     },
      "not":{
         "n1": "You overdid it with joy ",
-        "n2": "Not Found"
+        "n2": "Not Found",
+        "n3":"Go ahead, it's open..."
 
 
     }

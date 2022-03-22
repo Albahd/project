@@ -21,7 +21,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
 import Validate from './pages/Validate';
-
+import UserRegister from './pages/userregister';
+import ProtectedRoute from './routes/index.jsx'
 
 
 function App() {
@@ -63,6 +64,15 @@ function App() {
             <Route path='select' element={<SelectBeer beers={beer} />}></Route>
             <Route path='beerfilter/:tag' element={<BeerFilter></BeerFilter>}></Route>
             <Route path='/validate' element={<Validate></Validate>}></Route>
+
+            <Route path='/user' element={
+            <ProtectedRoute>
+            
+            <UserRegister></UserRegister>
+            
+            </ProtectedRoute>
+            
+            } ></Route>
 
 
             <Route path='/Events' element={<Events />}></Route>

@@ -4,6 +4,7 @@ import clasico from "../../assets/img/clasico.png"
 import dulce from "../../assets/img/dulce.png"
 import vaso from"../../assets/img/vaso.png"
 import cajas from "../../assets/img/cajas.png"
+import hipster from "../../assets/img/hipster.jpg"
 import belga from "../../assets/img/belga.png"
 import DetailCard from "../detailcard"
 import Container  from "react-bootstrap/Container"
@@ -50,7 +51,7 @@ const clasif = [
     {
         tag: "Revolution",
         sentence: "Hipster Beer",
-        img:cajas
+        img: hipster
 
 
     },

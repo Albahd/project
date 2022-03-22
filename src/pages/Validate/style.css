@@ -1,0 +1,17 @@
+.page-valid{
+
+  background-image:url("../../assets/img/enjoy1.jpg");
+    background-size: cover;
+    height: 100vh;
+    min-width: 100vh;
+
+}
+
+.size-1{
+  color: white;
+  padding: 10px;
+    font-family:'highv';
+    font-size:2rem
+
+
+}

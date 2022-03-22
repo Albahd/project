@@ -25,7 +25,7 @@ function Navegador() {
   const [lng, updateLng] = useContext(IdiomContext)
   const [t, i18n] = useTranslation("global");
 
-  const [theming, updateTheming, changeTheme,logName,setLogName] = useContext(ThemingContext);
+  const [theming, updateTheming, changeTheme, logName, setLogName] = useContext(ThemingContext);
 
 
   const handleChange = e => {
@@ -49,60 +49,60 @@ function Navegador() {
   return (
 
 
-    <div className="nav">
 
-      <Col>
-        <Navbar  style={{ width: "100%" }} collapseOnSelect expand="lg" bg={theming.primary} variant={theming.dark}>
-          <Container>
-            <Navbar.Brand href="/">ViBeer{<img src={jarra} alt="" />}</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto">
-              </Nav>
-              <Nav>
-                <Nav.Link as={Link} to="/select">{t("header.link1")}</Nav.Link>
-                <Nav.Link eventKey={2} as={Link} to="/listbeer">
-                  Beers
-                </Nav.Link>
-              </Nav>
-              <Nav>
-                <Nav.Link as={Link} to="/store">Shop&Drink</Nav.Link>
-                <Nav.Link eventKey={2} as={Link} to="/Events">
-                  {t("header.link2")}
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-           
+    <Navbar style={{ width: "100%" }} collapseOnSelect expand="lg" bg={theming.primary} variant={theming.dark} className="nav" sticky="top" >
+      <Container>
+        <Navbar.Brand as={Link} to="/">ViBeer{<img src={jarra} alt="" />}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+          </Nav>
+          <Nav>
+            <Nav.Link as={Link} to="/select">{t("header.link1")}</Nav.Link>
+            <Nav.Link eventKey={2} as={Link} to="/listbeer">
+              Beers
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link as={Link} to="/store">Shop&Drink</Nav.Link>
+            <Nav.Link eventKey={2} as={Link} to="/Events">
+              {t("header.link2")}
+            </Nav.Link>
 
-              <div className="selectors">
-                <img src={mundo} alt="" />
-                <select onChange={handleChange} name='idioms' style={{ background: 'none', border: 'none' }} >
-                  <option value='es'>Es</option>
-                  <option value='en'>En</option>
-                </select>
-         
-
+            <Col>
               <OverlayTrigger
                 placement="bottom"
                 delay={{ show: 150, hide: 300 }}
                 overlay={renderTooltip}
-              > 
+              >
                 <Button variant={theming.primary} onClick={changeTheme}>{<img src={paleta} alt="" />}</Button>
               </OverlayTrigger>
-           
-              <Button  variant={theming.primary}>{<img src={corazon} alt="" />}</Button>
-              <Button  variant={theming.primary}>{<img src={user} alt="" />}</Button>
-              {logName.name!==undefined?<p>{`${logName.name}`}</p>: ''}
-           
+            </Col>
+            <Col>
+              <Button variant={theming.primary}>{<img src={corazon} alt="" />}</Button>
+            </Col>
+            <Col>
+              <Link to='/user'> <Button variant={theming.primary}>{<img src={user} alt="" />}</Button></Link>
+            </Col>
+            <select onChange={handleChange} name='idioms' style={{ background: 'none', border: 'none' }} >
 
-              </div>
+              <option value='es'>Es</option>
+              <option value='en'>En</option>
+            </select>
 
-          </Container>
-        </Navbar>
-        </Col>
-    </div>
 
-   
+
+
+          </Nav>
+        </Navbar.Collapse>
+
+
+      </Container>
+    </Navbar>
+
+
+
+
   )
 }
 

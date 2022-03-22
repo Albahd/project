@@ -12,7 +12,8 @@
         "boton":"Guardar",
         "name":"Nombre",
         "age":"Edad",
-        "username":"Usuario"
+        "username":"Usuario",
+        "boton2":"Registro"
     },
     "Select":{
         "card1":"Mi puntito Ácido",
@@ -21,14 +22,22 @@
         "card4": "Soy un caramelito"
     },
     "Footer":{
-        "f1":"Alegría de Vibeer recomienda un consumo responsable"
+        "f1":"Alegría de Vibeer recomienda un consumo responsable",
+        "f2":"No te olvides de seguirnos!"
 
 
     },
     "Event":{
 
         "e1":"Nombre",
-        "e2":"Describe el evento..."
+        "e2":"Describe el evento...",
+        "e3": "Evento creado por",
+        "e4": "Descripción del evento",
+        "e5": "Usuarios inscritos",
+        "e6": "Apúntate!",
+        "e7": "Unas birritas? vamos!",
+        "e8": "Elige tú donde vamos a ViBeer",
+        "e9":"Fecha"
     },
     "landing":{
         "l1":"El primer trago del viernes",
@@ -38,7 +47,8 @@
     },
     "not":{
         "n1":"Te pasaste de alegría ",
-        "n2": "Not Found"
+        "n2": "Not Found",
+        "n3":"Adelante, está abierto..."
         
 
 

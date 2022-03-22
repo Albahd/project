@@ -1,7 +1,7 @@
 .text-not{
 
-    background-image:url("../../assets/img/broken3.jpg");
-    background-size: cover; 
+    /* background-image:url("../../assets/img/broken3.jpg");
+    background-size: cover;  */
     height: 100vh;
     min-width: 100vh;
     font-family: 'satoshi';
