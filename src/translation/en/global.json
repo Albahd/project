@@ -3,7 +3,9 @@
     "header":{
         "link1":"Tell me who you are and I'll tell you what you drink...",
         "link2":"Let's go for a beer",
-        "link3":"Change the theme!"
+        "link3":"Change the theme!",
+        "link4": "Register",
+        "link5": "User Profile"
         
         
     },
@@ -12,7 +14,7 @@
         "password":"Password",
         "rpassword":" Repeat Password",
         "boton":"Submit",
-        "name":"Name",
+        "name":"UserName",
         "age":"Age",
         "username":"User",
         "boton2":"Register"
@@ -55,6 +57,16 @@
         "n2": "Not Found",
         "n3":"Go ahead, it's open..."
 
+
+    },
+    "user":{
+        "r1": "Personal Data",
+        "r2": "UserName",
+        "r3": "Email",
+        "r4": "Age",
+        "r5": "Change",
+        "r6": "Delete User",
+        "r7": "Your Favorites"
 
     }
 

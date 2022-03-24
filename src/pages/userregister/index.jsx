@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal"
 import { useState } from "react";
 import { useEffect, useContext } from "react";
@@ -10,6 +11,8 @@ import { ThemingContext } from "../../shared/theming/theming-selector/theming.co
 import { useNavigate } from 'react-router-dom';
 import { IdiomContext } from "../../context/createcontext";
 import { useTranslation } from 'react-i18next';
+import './style.css';
+import Fav from "../../components/fav";
 
 function UserRegister() {
     const [theming, updateTheming] = useContext(ThemingContext)
@@ -23,6 +26,10 @@ function UserRegister() {
     let [user, updateuser] = useState([]);
     let token = localStorage.getItem('token')
     let id = localStorage.getItem('ID')
+    let [userfav, updateuserfav] = useState([])
+
+
+
     useEffect(() => {
 
         fetch('http://localhost:4000/users', {
@@ -62,8 +69,8 @@ function UserRegister() {
 
         const userData = {
 
-            // name: e.target.username.value,
-            name:e.target.username.value
+
+            name: e.target.username.value
 
         }
 
@@ -82,80 +89,103 @@ function UserRegister() {
 
 
 
+
+
+
+
     }
 
+    useEffect(() => {
+        fetch('http://localhost:4000/fav')
+            .then(j => j.json())
+            .then(r => {
+                console.log(r)
+                updateuserfav(r)
+            }
 
-    console.log(user)
+
+            )
+
+    }, []
+    )
+
+    console.log(userfav)
+
+
 
 
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <p>{user.name}</p>
-                    <p>{user.email}</p>
-                    <p>{user.age}</p>
-                    <Button variant="primary" onClick={handleShow}>
-                        Cambiar el nombre
-                    </Button>
+        <div className="body-user">
 
-                    <Modal show={show} onHide={handleClose}>
-                        <Modal.Header closeButton>
-                            <Modal.Title>username</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
+            <Container fluid>
+                <Row>
+                    <Col xs={8} sm={8} md={6} xl={5} className="div-datauser">
+                        <p className="title-pageuser">    {t("user.r1")} </p>
+                        <Card className="card-pageuser" style={{ width: '25rem', height: '15rem', border: 'none', backgroundColor: 'rgba(0,0,0,0.5)', color: 'white' }}>
+                            <Card.Body>
+                                <p className="data-pageuser">{t("user.r2")}: {user.name} <Button variant={theming.primary} onClick={handleShow} className="p-1">
+                                    {t("user.r5")}
+                                </Button> </p>
+
+                                <p>{t("user.r3")}: {user.email}</p>
+                                <p>{t("user.r4")}: {user.age}</p>
+                                <Button onClick={handleDelete} variant={theming.primary} className="p-1">{t("user.r6")}  </Button>
+                            </Card.Body>
+                        </Card>
+
+
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+
+                                <Modal.Title>username</Modal.Title>
+
+                            </Modal.Header>
                             <Form onSubmit={handlePatchUser}>
-                                <Form.Control
-                                    name="username"
-                                    type="text"
-                                    placeholder="cambia el nombre de usuario" />
+                                <Modal.Body>
+
+                                    <Form.Control
+                                        name="username"
+                                        type="text"
+                                        placeholder="cambia el nombre de usuario" />
+
+
+
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button variant={theming.dark} onClick={handleClose}>
+                                        Close
+                                    </Button>
+                                    <Button type="submit" variant={theming.primary} onClick={handleClose}>
+                                        Save Changes
+                                    </Button>
+                                </Modal.Footer>
                             </Form>
-                        {/* <input type="text" name="name"></input> */}
+                        </Modal>
 
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
-                                Close
-                            </Button>
-                            <Button  type="submit" variant="primary" onSubmit={handlePatchUser} onClick={handleClose}>
-                                Save Changes
-                            </Button>
-                        </Modal.Footer>
-                    </Modal>
+                    </Col>
+                  
 
+                    <Col xs={8} sm={8} md={6} xl={7} >
+                    <p className="title-pageuser2 text-center">{t("user.r7")}</p>
+                        <Container className="d-flex flex-wrap justify-content-around">
+                            {userfav.map((v, i) =>
+                                <Fav key={i} al={v.ABV} description={v.Descripción}
+                                    for={v.Formato} or={v.Origen} cat={v.Categories}
+                                    img={v.img} tipo={v.tipo} title={v.title}></Fav>
 
+                            )}
+                        </Container>
 
-
-
-
-
+                    </Col>
 
 
-                    {/* 
-                <Form onSubmit={handlePatchUser}>
-                                <Form.Label className="mt-4" ></Form.Label>
-                                <Form.Control
-                                    name="username"
-                                    type="text"
-                                    placeholder={t("cambiar usuario")}
 
 
-                                />
-                                <Button type="submit">Editar</Button>
-                            </Form> */}
+                </Row>
 
-                    <Button onClick={handleDelete} variant={theming.primary}>borrar usuario </Button>
+            </Container>
 
-                </Col>
-
-                <Col>
-                    <p>Cervezas favoritas</p>
-
-
-                </Col>
-            </Row>
-
-        </Container>
+        </div >
 
 
     )

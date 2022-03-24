@@ -1,8 +1,9 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Container  from "react-bootstrap/Container";
-import  Row  from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card"
 import './style.css'
 
 import { IdiomContext } from "../../context/createcontext";
@@ -10,6 +11,7 @@ import { useTranslation } from 'react-i18next';
 import { useContext, useState } from 'react'
 import { ThemingContext } from "../../shared/theming/theming-selector/theming.context";
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 
@@ -68,36 +70,35 @@ function Register() {
 
   return (
 
-    <Container className="container-register m-0 p-0" fluid > 
+    <Container
+      className="container-register m-0 pt-3" fluid >
       <Row>
-        <Col className="col-form"  m={6} >
-          <Form onSubmit={handlerSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicname">
-              <Form.Label style={{color:"white"}}>{t("login.username")}</Form.Label>
-              <Form.Control type="text" name="name" placeholder={t("login.username")} />
-            </Form.Group>
-            {/* <Form.Group className="mb-3" controlId="formBasicUser">
-        <Form.Label>{t("login.username")}</Form.Label>
-        <Form.Control name="ursername" type="text" placeholder={t("login.username")} />
-      </Form.Group> */}
+        <Col className="col-form" m={6} >
+          <Card style={{ width: '40rem', height: '280%', border: 'none', backgroundColor: 'rgba(0,0,0,0.6)' }} className="mx-auto mt-2 card-container">
+            <Form style={{ height: '4vh' }} onSubmit={handlerSubmit} className="m-5 p-5">
+              <Form.Group className="mb-3" controlId="formBasicname">
+                <Form.Label style={{ color: "white" }}>{t("login.name")}</Form.Label>
+                <Form.Control type="text" name="name" placeholder={t("login.name")} />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label style={{ color: "white" }}>{t("login.email")}</Form.Label>
+                <Form.Control name="email" type="email" placeholder={t("login.email")} />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicage">
+                <Form.Label style={{ color: "white" }}>{t("login.age")}</Form.Label>
+                <Form.Control name="age" type="number" placeholder={t("login.age")} />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label style={{ color: "white" }}>{t("login.password")}</Form.Label>
+                <Form.Control name="password" type="password" placeholder={t("login.rpassword")} />
+              </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label style={{color:"white"}}>{t("login.email")}</Form.Label>
-              <Form.Control name="email" type="email" placeholder={t("login.email")} />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicage">
-              <Form.Label style={{color:"white"}}>{t("login.age")}</Form.Label>
-              <Form.Control name="age" type="number" placeholder={t("login.age")} />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label style={{color:"white"}}>{t("login.password")}</Form.Label>
-              <Form.Control name="password" type="password" placeholder={t("login.rpassword")} />
-            </Form.Group>
-            <Button variant={theming.primary} type="submit">
-              {t("login.boton")}
-            </Button>
+             <Link to='/'> <Button variant={theming.primary} type="submit">
+                {t("login.boton")}
+              </Button></Link>
 
-          </Form>
+            </Form>
+          </Card>
         </Col>
       </Row>
     </Container>

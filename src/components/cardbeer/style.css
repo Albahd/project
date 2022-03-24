@@ -1,0 +1,19 @@
+.card-container{
+
+position:relative;
+
+
+
+}
+
+.card-fav{
+    width: 20%;
+    position: absolute;
+    right:17px;
+    top:5px;
+
+    
+
+
+
+}

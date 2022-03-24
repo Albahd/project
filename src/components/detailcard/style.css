@@ -1,7 +1,12 @@
 .card-select{
-
+    
     padding-top: 6%;
     
+}
+.select-img{
+    border-radius: 10px;
+
+
 }
 
 .card-select:hover{
@@ -12,7 +17,7 @@
 
 .card-h2{
     display: flex;
-    color:#676767;
+    color: black;
     font-family:'highv';
     opacity: 0.9;
     padding-top: 5px;

@@ -21,24 +21,25 @@ function Footer() {
 
     return (
         <footer color={theming.warning} className="f-footer">
-        <Container fluid>
-            <Row>
+            <Container fluid>
+                <Row>
 
-        
-                <Col sm={8} style={{fontFamily:'highv'}}>
-              {t("Footer.f1")}
-                </Col>
-                <Col sm={3} style={{fontFamily:'highv'}}>
-                {t("Footer.f2")}
-               
-                
-              
-                <img src={instagram} alt="" className="" />
-                <img src={facebook} alt="" />
-                </Col>
-      
-            </Row>
-        </Container>
+
+                    <Col sm={12} lg={7} style={{ fontFamily: 'highv' }}className="mt-1">
+                        {t("Footer.f1")}
+                    </Col>
+                    <Col sm={4} lg={2} style={{ fontFamily: 'highv' }}className="mt-1">
+
+                        {t("Footer.f2")}
+                    </Col>
+                    <Col sm={8} lg={3} style={{ fontFamily: 'highv' }} className="mt-1">
+
+                        <img src={instagram} alt="" className="px-2" />
+                        <img src={facebook} className="px-1" alt="" />
+                    </Col>
+
+                </Row>
+            </Container>
         </footer>
     )
 

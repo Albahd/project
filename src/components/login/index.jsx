@@ -7,9 +7,11 @@ import Register from "../registro";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container";
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import './style.css'
 
 
 
@@ -56,48 +58,55 @@ function Login() {
           })
         // localStorage.setItem('info',)
       })
-    
+
 
 
 
   }
   const handleCloseSession = () => {
     localStorage.removeItem('token')
+    localStorage.removeItem('ID')
     navigate('/')
 
   }
   console.log(logName)
   return (
-    <Container>
+    <Container className="container-login m-0 pt-5" fluid >
       <Row>
-        <Col m={6}>
-          <Form onSubmit={handleOnSubmit}>
-            <Form.Group className="mb-3" controlId="formEmail">
-              <Form.Label>{t("login.email")}</Form.Label>
-              <Form.Control name="email" type="email" placeholder={t("login.email")} />
+        <Col >
+          <Card style={{ width: '50%', height: '100%', border: 'none', backgroundColor: 'rgba(0,0,0,0.6)', color: 'white' }} className="mx-auto mt-2 pt-3 card-container">
+            <Form onSubmit={handleOnSubmit} className="form-login">
+              <Form.Group className="mb-3" controlId="formEmail">
+                <Form.Label>{t("login.email")}</Form.Label>
+                <Form.Control name="email" type="email" placeholder={t("login.email")} />
+              </Form.Group>
 
-            </Form.Group>
+              <Form.Group className="mb-3" controlId="formPassword">
+                <Form.Label>{t("login.password")}</Form.Label>
+                <Form.Control name="password" type="password" placeholder={t("login.password")} />
+              </Form.Group>
+              <div className="but">
+              <div className="but-log">
+              <Button variant={theming.primary} type="submit">
+                {t("login.boton")}
+              </Button>
+              </div>
 
-            <Form.Group className="mb-3" controlId="formPassword">
-              <Form.Label>{t("login.password")}</Form.Label>
-              <Form.Control name="password" type="password" placeholder={t("login.password")} />
-            </Form.Group>
-            <Button variant={theming.primary} type="submit">
-              {t("login.boton")}
-            </Button>
-            <Button onClick={handleCloseSession} variant={theming.primary} type="submit">
-              cerrar sesión
-            </Button>
-
-          </Form>
+              <div className="but-cr">
+                <Button  className="but-close" onClick={handleCloseSession} variant={theming.primary} type="submit">
+                  out sesión
+                </Button>
+                <Link to='/register'><Button variant={theming.primary} type="submit">
+                  {t("login.boton2")}
+                </Button></Link>
+                </div>
+              </div>
+            </Form>
+          </Card>
         </Col>
-        <Col>
-          <Link to='/register'><Button variant={theming.primary} type="submit">
-            {t("login.boton2")}
-          </Button></Link>
 
-        </Col>
       </Row>
+
     </Container>
   )
 

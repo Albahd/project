@@ -11,24 +11,26 @@ import { useState,useEffect } from "react";
 function ContainerEvent(props){
 
 
-let[ev, updateEvent] = useState([]);
+let[ev, updateEvent] = useState(props.event);
+console.log(ev)
+let today = new Date();
+  let dd = today.getDate();
+  let mm = today.getMonth() + 1; //January is 0!
+  let yyyy = today.getFullYear();
 
+  if (dd < 10) {
+    dd = '0' + dd;
+  }
 
-useEffect(() => {
-  fetch('http://localhost:4000/Events')
-    .then(j => j.json())
-    .then(r => {
-      console.log(r)
-      updateEvent(r)
-    }
+  if (mm < 10) {
+    mm = '0' + mm;
+  }
 
+  today = yyyy + '-' + mm + '-' + dd;
 
-    )
-
-}, []
-)
-
-
+  console.log(today)
+let filterevent = props.event.filter( v => v.date >= today)
+console.log(filterevent)
 
 
 
@@ -39,11 +41,12 @@ return (
 <Container >
   <Row>
 
-  {ev.length === 0 ? <h1>cargando</h1> :ev.map((v, i) =>{
+
+  {filterevent.length === 0 ? <h1>cargando</h1> :filterevent.map((v, i) =>{
   
   return  (
 
-<CardEvent key={i}t name={v.name} event={v.event} date={v.date === undefined ? '' : v.date.split('-').reverse().join(' ').replaceAll(' ', '-')
+<CardEvent key={i} name={v.name} event={v.event} date={v.date === undefined ? '' : v.date.split('-').reverse().join(' ').replaceAll(' ', '-')
 }></CardEvent>)} 
 
 )}

@@ -1,0 +1,50 @@
+.container-login{
+    padding-top: 10%;
+    background-image:url("../../assets/img/cajas.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    font-family:'highv';
+    justify-content: center;
+
+    
+
+}
+
+
+.form-login{
+  padding: 8%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+ 
+
+.but{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+
+.but-log{
+
+    justify-content: center;
+
+}
+
+.but-cr{
+
+    padding-top: 12px;
+   
+
+
+}
+
+.but-close{
+    margin-right: 5px;
+
+
+
+}

@@ -4,7 +4,6 @@ import Navegador from './components/navegador';
 import CardBeer from './components/cardbeer';
 import ListBeer from './components/listbeer';
 import Events from './pages/events';
-import Fan from './components/fan';
 import StoreBar from './components/store-bar';
 import SelectBeer from './components/selectbeer';
 import IdiomProvider from './context/context';
@@ -22,7 +21,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
 import Validate from './pages/Validate';
 import UserRegister from './pages/userregister';
-import ProtectedRoute from './routes/index.jsx'
+import ProtectedRoute from './routes/index.jsx';
+import 'leaflet/dist/leaflet.css'
 
 
 function App() {
@@ -76,7 +76,6 @@ function App() {
 
 
             <Route path='/Events' element={<Events />}></Route>
-            <Route path='/fan' element={<Fan />}></Route>
             <Route path='/store' element={<StoreBar />}></Route>
             <Route path='/login' element={<Login />}></Route>
             
