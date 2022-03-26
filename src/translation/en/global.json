@@ -40,7 +40,7 @@
         "e5": "Users signed up",
         "e6":"Sign up!",
         "e7":"A few beers? come on! ",
-        "e8": "You choose where we go to ViBeer",
+        "e8": "You choose!",
         "e9": "Date"
 
     },
@@ -68,6 +68,24 @@
         "r6": "Delete User",
         "r7": "Your Favorites"
 
-    }
+    },
+    "search":{
+
+        "s1":"Search by type...IPA,ALE.."
+    },
+
+    "who":{
+        "w2": "Alegría de Vibeer we are a community for beer lovers.", 
+        "w3": "In the morning? beer.",
+        "w4": "in the afternoon? beer.",
+        "w5": "Something good? a beer and celebrate.",
+        "w6": "Something bad? A beer and you tell me.",
+        "w7": "Because beer goes with everything and the usual beer is very good but we all know it already. ",
+        "w8": "We offer you a library where you can consult varieties and types of craft beer",
+        "w9": "Recommendations of bars and stores where you can consume these products in Madrid, as well as a place where we can organize events and get to know each other",
+        "w10": "and never lose La Alegría de VIBEER."
+ }
+
+
 
 }

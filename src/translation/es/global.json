@@ -38,7 +38,7 @@
         "e5": "Usuarios inscritos",
         "e6": "Apúntate!",
         "e7": "Unas birritas? vamos!",
-        "e8": "Elige tú donde vamos a ViBeer",
+        "e8": "Tú eliges!",
         "e9":"Fecha"
     },
     "landing":{
@@ -65,7 +65,27 @@
         "r6":"Borrar Usuario",
         "r7":"Tus Favoritos"
 
-    }
+    },
 
+    "search":{
+
+        "s1":"Busca por tipo...IPA,ALE.."
+        
+        
+    },
+    "who":{
+        "w2":"Alegría de Vibeer somos un comunidad para amantes de la cerveza.",
+        "w3":"Por la mañana? cerveza",
+        "w4":"por la tarde? cerveza.",
+        "w5":"Algo que bueno? una cerveza y lo celebramos.",
+        "w6": "Algo malo? una cerveza y me cuentas",
+        "w7":"Porque la cerveza pega con todo y la cerveza de siempre esta muy bien  pero ya la conocemos todos. ",
+        "w8":"Te ofrecemos una biblioteca donde consultar variedades y tipos de cerveza artesana.",
+        "w9":"Recomendaciones de  bares y tiendas donde consumir estos productos en Madrid, asi como un lugar donde podamos organizar eventos y conocernos..",
+        "w10":"y que nunca perdamos La Alegría de VIBEER."
+ }
+
+
+    
 
 }

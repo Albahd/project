@@ -32,7 +32,9 @@ function Login() {
       email: e.target.email.value,
       password: e.target.password.value,
     }
+    localStorage.setItem('email', e.target.email.value)
     // console.log(user)
+    localStorage.setItem('username',logName.name)
 
     fetch('http://localhost:4000/auth/login', {
       method: 'POST',
@@ -66,6 +68,8 @@ function Login() {
   const handleCloseSession = () => {
     localStorage.removeItem('token')
     localStorage.removeItem('ID')
+    localStorage.removeItem('email')
+    localStorage.removeItem('username')
     navigate('/')
 
   }

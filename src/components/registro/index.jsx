@@ -40,7 +40,7 @@ function Register() {
 
 
     }
-
+  
     // const userFormData = new FormData(e.target)
     // body: JSON.stringify(Object.fromEntries(userFormData))
     // console.log(user)  ESTA FORMA ES MEJOR QUE CREAR EL OBJETO.

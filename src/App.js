@@ -23,6 +23,8 @@ import Validate from './pages/Validate';
 import UserRegister from './pages/userregister';
 import ProtectedRoute from './routes/index.jsx';
 import 'leaflet/dist/leaflet.css'
+import We from './pages/we';
+import WeWho from './pages/we';
 
 
 function App() {
@@ -32,7 +34,7 @@ function App() {
     fetch('http://localhost:4000/beer')
       .then(j => j.json())
       .then(r => {
-        console.log(r)
+        // console.log(r)
         updatebeer(r)
       }
 
@@ -80,7 +82,9 @@ function App() {
             <Route path='/login' element={<Login />}></Route>
             
             <Route path='/register' element={<Register />}></Route>
+            <Route path= '/we' element={<WeWho></WeWho>}></Route>
             <Route path='/*' element={<NotFound></NotFound>}></Route>
+
 
           </Routes>
         }

@@ -42,12 +42,12 @@ updateEnv(envF => [...envF,v] )
     return(
 <Container fluid className="total-event" >
 <Row>
-<Col style={{ color: "black"}}>
-<p className="events-title">{t("Event.e7")}</p>
+<Col xs={10} sm={12} md={7} lg={7} xl={6} style={{ color: "black"}}>
+<p className="events-title mt-1">{t("Event.e7")}</p>
 <ContainerEvent event={ev}></ContainerEvent>
  </Col>
- <Col  style={{ color: "black"}}>
- <p className="events-title">{t("Event.e8")}</p>
+ <Col className="col-form" xs={12} sm={12} md={5} lg={5} xl={6}style={{ color: "black"}}>
+ <p className="events-title mt-1" >{t("Event.e8")}</p>
  <FormEvent actualizar={actualizar}></FormEvent>
  </Col>
 
@@ -61,3 +61,6 @@ updateEnv(envF => [...envF,v] )
 }
 
 export default Events
+
+
+// className="d-flex flex-wrap flex-column justify-content-center"

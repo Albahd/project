@@ -8,6 +8,7 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import './style.css';
 
 
 
@@ -78,10 +79,10 @@ console.log(event)
 
 
   return (
-    <Container>
-      <Row>
-        <Col xs={12} s={8} m={6} lg={6}>
-          <Form onSubmit={handlerSubmit}>
+    <Container  fluid  className="d-flex  flex-wrap justify-content-around">
+      <Row >
+        <Col  xs={12}>
+          <Form  className="form" onSubmit={handlerSubmit}>
             <Form.Group className="mb-3, color:black" controlId="formBasicname">
               <Form.Label>{t("Event.e1")}</Form.Label>
               <Form.Control type="text" name="name" placeholder={t("Event.e1")} />
@@ -109,3 +110,5 @@ console.log(event)
 }
 
 export default FormEvent
+
+// className="d-flex flex-wrap justify-content-around"

@@ -1,0 +1,14 @@
+.text-we{
+
+    padding-top: 5%;
+    background-image:url("../../assets/img/cajas.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    font-family:'highv';
+    font-size: 20px;
+
+
+
+
+}

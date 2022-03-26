@@ -30,6 +30,7 @@ function UserRegister() {
 
 
 
+
     useEffect(() => {
 
         fetch('http://localhost:4000/users', {
@@ -96,7 +97,13 @@ function UserRegister() {
     }
 
     useEffect(() => {
-        fetch('http://localhost:4000/fav')
+        fetch('http://localhost:4000/fav', {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`
+
+
+            }})
             .then(j => j.json())
             .then(r => {
                 console.log(r)
@@ -112,6 +119,14 @@ function UserRegister() {
     console.log(userfav)
 
 
+    const handleCloseSession = () => {
+        localStorage.removeItem('token')
+        localStorage.removeItem('ID')
+        localStorage.removeItem('email')
+        localStorage.removeItem('username')
+        navigate('/')
+
+    }
 
 
     return (
@@ -119,17 +134,21 @@ function UserRegister() {
 
             <Container fluid>
                 <Row>
-                    <Col xs={8} sm={8} md={6} xl={5} className="div-datauser">
+                    <Col xs={8} sm={8} md={7} xl={5} className="div-datauser">
                         <p className="title-pageuser">    {t("user.r1")} </p>
                         <Card className="card-pageuser" style={{ width: '25rem', height: '15rem', border: 'none', backgroundColor: 'rgba(0,0,0,0.5)', color: 'white' }}>
                             <Card.Body>
-                                <p className="data-pageuser">{t("user.r2")}: {user.name} <Button variant={theming.primary} onClick={handleShow} className="p-1">
+                                <p className="data-pageuser">{t("user.r2")}: {user.name} <Button variant={theming.primary} onClick={handleShow} className="p-1 mx-2">
                                     {t("user.r5")}
                                 </Button> </p>
 
                                 <p>{t("user.r3")}: {user.email}</p>
                                 <p>{t("user.r4")}: {user.age}</p>
+                                <Button className="but-close p-1" onClick={handleCloseSession} variant={theming.primary} type="submit">
+                                    out sesión
+                                </Button>
                                 <Button onClick={handleDelete} variant={theming.primary} className="p-1">{t("user.r6")}  </Button>
+
                             </Card.Body>
                         </Card>
 
@@ -163,15 +182,17 @@ function UserRegister() {
                         </Modal>
 
                     </Col>
-                  
 
-                    <Col xs={8} sm={8} md={6} xl={7} >
-                    <p className="title-pageuser2 text-center">{t("user.r7")}</p>
+
+                    <Col xs={8} sm={8} md={7} xl={7} >
+                        <p className="title-pageuser2 text-center">{t("user.r7")}</p>
                         <Container className="d-flex flex-wrap justify-content-around">
                             {userfav.map((v, i) =>
-                                <Fav key={i} al={v.ABV} description={v.Descripción}
+                                <Fav
+
+                                    key={i} al={v.ABV} description={v.Descripción}
                                     for={v.Formato} or={v.Origen} cat={v.Categories}
-                                    img={v.img} tipo={v.tipo} title={v.title}></Fav>
+                                    img={v.img} tipo={v.tipo} title={v.title} id={v.id}></Fav>
 
                             )}
                         </Container>

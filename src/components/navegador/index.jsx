@@ -29,8 +29,6 @@ function Navegador() {
   const [theming, updateTheming, changeTheme, logName, setLogName] = useContext(ThemingContext);
 
 
-
-
   const handleChange = e => {
     if (e.target.value === "en") {
       i18n.changeLanguage("en")
@@ -63,12 +61,15 @@ function Navegador() {
      Login
     </Tooltip>
   );
+
+  console.log(logName)
   return (
 
 
 
-    <Navbar style={{ width: "100%" }} collapseOnSelect expand="lg" bg={theming.primary} variant={theming.dark} className="nav" sticky="top" >
+    <Navbar style={{ width: "100%" }} collapseOnSelect expand="lg" bg={theming.primary} variant={theming.dark}  className="nav" sticky="top" >
       <Container>
+      <Navbar.Brand >{logName.name}</Navbar.Brand>
         <Navbar.Brand as={Link} to="/">ViBeer{<img src={jarra} alt="" />}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -133,9 +134,6 @@ function Navegador() {
               <option value='es'>Es</option>
               <option value='en'>En</option>
             </select>
-
-
-
 
           </Nav>
         </Navbar.Collapse>

@@ -31,7 +31,7 @@ const [t, i18n] = useTranslation("global");
   return (
 
 
-    <Card  style={{ width: '18rem', border: 'none',  backgroundColor:'rgba(0,0,0,0.6)' }} className="mx-auto mt-2 card-container">
+    <Card  style={{ width: '18rem', border: 'none',  backgroundColor:'rgba(0,0,0,0.7)' }} className="mx-auto mt-2 card-container">
       <Card.Body>
         <Card.Title style={{ color: "white", font: "bold" }}>{t("Event.e3")}: {props.name}</Card.Title>
         <ListGroup className="card-list-event" variant="flush">

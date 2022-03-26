@@ -7,7 +7,9 @@ import { useContext, useState } from 'react';
 import { IdiomContext } from "../../context/createcontext";
 import instagram from '../../assets/img/instagram.png';
 import facebook from '../../assets/img/facebook.png';
+import personas from '../../assets/img/personas.png'
 import { Container } from "react-bootstrap";
+
 
 
 
@@ -17,6 +19,7 @@ function Footer() {
     const [t, i18n] = useTranslation("global");
 
     const [theming, updateTheming, changeTheme] = useContext(ThemingContext);
+   
 
 
     return (
@@ -34,8 +37,9 @@ function Footer() {
                     </Col>
                     <Col sm={8} lg={3} style={{ fontFamily: 'highv' }} className="mt-1">
 
-                        <img src={instagram} alt="" className="px-2" />
+                        <img src={instagram} alt="" className="px-1" />
                         <img src={facebook} className="px-1" alt="" />
+                        <img src={personas} className="px-1" alt="" />
                     </Col>
 
                 </Row>
