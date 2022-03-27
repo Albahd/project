@@ -1,91 +1,75 @@
 {
-    
-    "header":{
-        "link1":"Dime quién eres y te diré qué bebes...",
-        "link2":"Vámonos de birras",
-        "link3":"Cámbiame el tema!",
+    "header": {
+        "link1": "Dime quién eres y te diré qué bebes...",
+        "link2": "Vámonos de birras",
+        "link3": "Cámbiame el tema!",
         "link4": "Registro",
         "link5": "Perfil de Usuario"
     },
-    "login":{
-        "email":"Email",
-        "password":"Contraseña",
-        "rpassword":"Repite la Contraseña",
-        "boton":"Guardar",
-        "name":"Nombre de Usuario",
-        "age":"Edad",
-        "username":"Usuario",
-        "boton2":"Registro"
+    "login": {
+        "email": "Email",
+        "password": "Contraseña",
+        "rpassword": "Repite la Contraseña",
+        "boton": "Guardar",
+        "name": "Nombre de Usuario",
+        "age": "Edad",
+        "username": "Usuario",
+        "boton2": "Registro"
     },
-    "Select":{
-        "card1":"Mi puntito Ácido",
+    "Select": {
+        "card1": "Mi puntito Ácido",
         "card2": "Todo al Negro",
         "card3": "Los Clásicos nunca fallan...",
         "card4": "Soy un caramelito"
     },
-    "Footer":{
-        "f1":"Alegría de Vibeer recomienda un consumo responsable",
-        "f2":"No te olvides de seguirnos!"
-
-
+    "Footer": {
+        "f1": "Alegría de Vibeer recomienda un consumo responsable",
+        "f2": "No te olvides de seguirnos!",
+        "f3": "Quién somos?"
     },
-    "Event":{
-
-        "e1":"Nombre",
-        "e2":"Describe el evento...",
+    "Event": {
+        "e1": "Nombre",
+        "e2": "Describe el evento...",
         "e3": "Evento creado por",
         "e4": "Descripción del evento",
         "e5": "Usuarios inscritos",
         "e6": "Apúntate!",
         "e7": "Unas birritas? vamos!",
         "e8": "Tú eliges!",
-        "e9":"Fecha"
+        "e9": "Fecha"
     },
-    "landing":{
-        "l1":"El primer trago del viernes",
-        "l2":"La comida con la familia",
-        "l3":"Un brindis con los amigos..."
-
+    "landing": {
+        "l1": "El primer trago del viernes",
+        "l2": "La comida con la familia",
+        "l3": "Un brindis con los amigos..."
     },
-    "not":{
-        "n1":"Te pasaste de alegría ",
+    "not": {
+        "n1": "Te pasaste de alegría ",
         "n2": "Not Found",
-        "n3":"Adelante, está abierto..."
-        
-
-
+        "n3": "Adelante, está abierto..."
     },
-
-    "user":{
-        "r1":"Datos Personales",
+    "user": {
+        "r1": "Datos Personales",
         "r2": "Nombre de Usuario",
-        "r3":"Email",
-        "r4":"Edad",
-        "r5":"Cambiar",
-        "r6":"Borrar Usuario",
-        "r7":"Tus Favoritos"
-
+        "r3": "Email",
+        "r4": "Edad",
+        "r5": "Cambiar",
+        "r6": "Borrar Usuario",
+        "r7": "Tus Favoritos"
     },
-
-    "search":{
-
-        "s1":"Busca por tipo...IPA,ALE.."
-        
-        
+    "search": {
+        "s1": "Busca por tipo...IPA,ALE.."
     },
-    "who":{
-        "w2":"Alegría de Vibeer somos un comunidad para amantes de la cerveza.",
-        "w3":"Por la mañana? cerveza",
-        "w4":"por la tarde? cerveza.",
-        "w5":"Algo que bueno? una cerveza y lo celebramos.",
+    "who": {
+        "w2": "Alegría de Vibeer somos un comunidad para amantes de la cerveza.",
+        "w3": "Por la mañana? cerveza",
+        "w4": "por la tarde? cerveza.",
+        "w5": "Algo que bueno? una cerveza y lo celebramos.",
         "w6": "Algo malo? una cerveza y me cuentas",
-        "w7":"Porque la cerveza pega con todo y la cerveza de siempre esta muy bien  pero ya la conocemos todos. ",
-        "w8":"Te ofrecemos una biblioteca donde consultar variedades y tipos de cerveza artesana.",
-        "w9":"Recomendaciones de  bares y tiendas donde consumir estos productos en Madrid, asi como un lugar donde podamos organizar eventos y conocernos..",
-        "w10":"y que nunca perdamos La Alegría de VIBEER."
- }
-
-
-    
-
+        "w7": " Más alla de las de siempre,nosotros te ofrecemos una biblioteca ",
+        "w8": " donde consultar variedades y tipos de cerveza artesana.",
+        "w9": "Recomendaciones de  bares y tiendas donde consumir estos productos en Madrid",
+        "w10": "asi como un lugar donde podamos organizar eventos y conocernos..",
+        "w11": "y que nunca perdamos La Alegría de VIBEER."
+    }
 }

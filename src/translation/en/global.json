@@ -28,7 +28,8 @@
     },
     "Footer":{
         "f1": "Alegría de Vibeer recommends responsible consumption",
-        "f2":"Don't forget to follow us!"
+        "f2":"Don't forget to follow us!",
+        "f3":"Who are we?"
 
 
     },
@@ -75,15 +76,17 @@
     },
 
     "who":{
-        "w2": "Alegría de Vibeer we are a community for beer lovers.", 
+        "w2": "Alegría de Vibeer we are a community for beer lovers.",
         "w3": "In the morning? beer.",
         "w4": "in the afternoon? beer.",
-        "w5": "Something good? a beer and celebrate.",
+        "w5": "Something good? a beer and we celebrate.",
         "w6": "Something bad? A beer and you tell me.",
-        "w7": "Because beer goes with everything and the usual beer is very good but we all know it already. ",
-        "w8": "We offer you a library where you can consult varieties and types of craft beer",
-        "w9": "Recommendations of bars and stores where you can consume these products in Madrid, as well as a place where we can organize events and get to know each other",
-        "w10": "and never lose La Alegría de VIBEER."
+        "w7": "Beyond the usual, we offer you a library",
+        "w8": "where you can consult varieties and types of craft beer",
+        "w9": "Recommendations of bars and stores where to consume these products in Madrid",
+        "w10": "as well as a place where we can organize events and get to know each other...",
+        "w11": "and that we never lose La Alegría de VIBEER."
+
  }
 
 

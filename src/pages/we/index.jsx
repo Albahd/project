@@ -31,6 +31,7 @@ function WeWho() {
                         <p className="text-1">{t("who.w8")}</p>
                         <p className="text-1">{t("who.w9")}</p>
                         <p className="text-1">{t("who.w10")}</p>
+                        <p className="text-1">{t("who.w11")}</p>
                         
                     
                     </Card>

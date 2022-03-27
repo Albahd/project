@@ -18,7 +18,7 @@ function Fav(props){
                 .then(j => j.json())
                 .then(data => {
                     console.log(data)
-                    navigate('/listbeer')
+                    navigate('/user')
     
                 })
     

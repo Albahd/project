@@ -134,7 +134,7 @@ function UserRegister() {
 
             <Container fluid>
                 <Row>
-                    <Col xs={8} sm={8} md={7} xl={5} className="div-datauser">
+                    <Col xs={9} sm={8} md={7} xl={5} className="div-datauser">
                         <p className="title-pageuser">    {t("user.r1")} </p>
                         <Card className="card-pageuser" style={{ width: '25rem', height: '15rem', border: 'none', backgroundColor: 'rgba(0,0,0,0.5)', color: 'white' }}>
                             <Card.Body>
@@ -184,9 +184,11 @@ function UserRegister() {
                     </Col>
 
 
-                    <Col xs={8} sm={8} md={7} xl={7} >
-                        <p className="title-pageuser2 text-center">{t("user.r7")}</p>
-                        <Container className="d-flex flex-wrap justify-content-around">
+                    <Col xs={9} sm={8} md={7} xl={7} >
+                    <p className="title-pageuser2 text-center">{t("user.r7")}</p>
+                        
+                        <Container fluid className="d-flex flex-wrap justify-content-around">
+                       
                             {userfav.map((v, i) =>
                                 <Fav
 
