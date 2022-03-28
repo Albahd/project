@@ -6,8 +6,12 @@ import './style.css'
 
 
 
-function Fav(props){
+function Fav(props,{acdelete}){
   const navigate = useNavigate()
+  const handlerUpdate = (v) => {
+    acdelete(v)
+
+  }
   const handleDeleteFav = () => {
 
     
@@ -18,7 +22,7 @@ function Fav(props){
                 .then(j => j.json())
                 .then(data => {
                     console.log(data)
-                    navigate('/user')
+                    handlerUpdate(data)
     
                 })
     

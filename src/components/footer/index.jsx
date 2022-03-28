@@ -46,8 +46,9 @@ function Footer() {
                         {t("Footer.f2")}
                     </Col>
                     <Col sm={8} lg={3} style={{ fontFamily: 'highv' }} className="mt-1">
+                    <a className="link-map" target='_blank' href={"https://www.instagram.com/alegriadevibeer/"}><img src={instagram} alt="" className="px-1" /> </a>
 
-                        <img src={instagram} alt="" className="px-1" />
+                       
                         <img src={facebook} className="px-1" alt="" />
                      <OverlayTrigger
                 placement="top"

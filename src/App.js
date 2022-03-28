@@ -5,7 +5,7 @@ import CardBeer from './components/cardbeer';
 import ListBeer from './components/listbeer';
 import Events from './pages/events';
 import StoreBar from './components/store-bar';
-import SelectBeer from './components/selectbeer';
+// import SelectBeer from './components/selectbeer';
 import IdiomProvider from './context/context';
 import { useState, useEffect } from 'react';
 import { ThemingContext } from './shared/theming/theming-selector/theming.context';
@@ -25,7 +25,10 @@ import ProtectedRoute from './routes/index.jsx';
 import 'leaflet/dist/leaflet.css'
 import We from './pages/we';
 import WeWho from './pages/we';
-
+import LegalPage from './pages/legal';
+import LegalTwoPage from './pages/legaltwo';
+import { Suspense,lazy } from 'react';
+const SelectBeer = lazy( ()=> import('./components/selectbeer') )
 
 function App() {
   let [beer, updatebeer] = useState([]);
@@ -59,13 +62,20 @@ function App() {
 
 
         {beer.length === 0 ? "" :
+        
 
           <Routes>
             <Route path='/' element={<LandingPage></LandingPage>}></Route>
             <Route path='listbeer' element={<ListBeer beers={beer} />}></Route>
-            <Route path='select' element={<SelectBeer beers={beer} />}></Route>
+            <Route path='select' element={
+            
+            <Suspense fallback={""}>
+            
+            <SelectBeer beers={beer} /></Suspense>}>
+            </Route>
             <Route path='beerfilter/:tag' element={<BeerFilter></BeerFilter>}></Route>
             <Route path='/validate' element={<Validate></Validate>}></Route>
+
 
             <Route path='/user' element={
             <ProtectedRoute>
@@ -83,11 +93,18 @@ function App() {
             
             <Route path='/register' element={<Register />}></Route>
             <Route path= '/we' element={<WeWho></WeWho>}></Route>
+            <Route path='/legal' element={<LegalPage></LegalPage>}></Route>
+            <Route path='/legaltwo' element={<LegalTwoPage></LegalTwoPage>}></Route>
+
             <Route path='/*' element={<NotFound></NotFound>}></Route>
 
 
           </Routes>
         }
+       
+
+
+
       </IdiomProvider>
 
     </BrowserRouter>

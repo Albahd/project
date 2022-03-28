@@ -27,6 +27,7 @@ function UserRegister() {
     let token = localStorage.getItem('token')
     let id = localStorage.getItem('ID')
     let [userfav, updateuserfav] = useState([])
+    let[envD,updateDelete] = useState([]);
 
 
 
@@ -113,7 +114,7 @@ function UserRegister() {
 
             )
 
-    }, []
+    }, [envD]
     )
 
     console.log(userfav)
@@ -127,8 +128,10 @@ function UserRegister() {
         navigate('/')
 
     }
-
-
+   
+    const acdelete=(v) =>{
+        updateDelete(envD => [...envD,v] )
+        }
     return (
         <div className="body-user">
 
@@ -190,7 +193,7 @@ function UserRegister() {
                         <Container fluid className="d-flex flex-wrap justify-content-around">
                        
                             {userfav.map((v, i) =>
-                                <Fav
+                                <Fav acdelete={acdelete}
 
                                     key={i} al={v.ABV} description={v.Descripción}
                                     for={v.Formato} or={v.Origen} cat={v.Categories}
