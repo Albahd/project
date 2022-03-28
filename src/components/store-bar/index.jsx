@@ -16,20 +16,6 @@ import { useContext } from "react";
 function StoreBar() {
     const [theming, updateTheming, changeTheme, logName, setLogName] = useContext(ThemingContext);
     const defaultPosition = [40.4165, -3.70256];
-    const places = [
-        [40.433809, -3.708471],
-        [40.408681, -3.710086],
-        [40.419638, -3.678222],
-        [40.412858, -3.699471],
-        [40.423551, -3.700140],
-        [40.421922, -3.696928],
-        [40.4264969, -3.7017425],
-        [40.426496, -3.701889],
-        [40.428671, -3.705306],
-        [40.422752, -3.701993],
-        ,
-
-    ]
     const name = [
         {
             n: "Labirratorium",

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { IdiomContext } from "../../context/createcontext";
 import Row from 'react-bootstrap/Row';
-import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/Container';
@@ -48,7 +47,7 @@ function WeWho() {
                                 alt="Second slide"
                             />
 
-                            <Carousel.Caption style={{color:'white'}}>
+                            <Carousel.Caption style={{color:'#fbbc5d'}}>
                                 <h4>{t("who.w5")}</h4>
                                 <h4>{t("who.w6")}</h4>
 

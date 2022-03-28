@@ -1,15 +1,14 @@
 import { useLocation } from "react-router-dom"
 import {useParams} from 'react-router-dom';
-import { useSearchParams } from "react-router-dom";
 import  Row  from "react-bootstrap/Row";
 import  Container  from "react-bootstrap/Container";
 import CardBeer from "../../components/cardbeer";
 import './style.css';
-import Navegador from "../../components/navegador";
+
 
 
 function BeerFilter(){
-    const [queryParams] = useSearchParams();
+   
     const pathParams = useParams();
     const location = useLocation()
     const arrbeer = location.state
