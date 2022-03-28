@@ -74,8 +74,8 @@ function Register() {
       className="container-register m-0 pt-3" fluid >
       <Row>
         <Col className="col-form" m={6} >
-          <Card style={{ width: '40rem', height: '280%', border: 'none', backgroundColor: 'rgba(0,0,0,0.6)' }} className="mx-auto mt-2 card-container">
-            <Form style={{ height: '4vh' }} onSubmit={handlerSubmit} className="m-5 p-5">
+          <Card style={{ maxWidth: '50vh', minWidth:'60%' ,minHeight: '50%', border: 'none', backgroundColor: 'rgba(0,0,0,0.6)' }} className="mx-auto  card-container">
+            <Form  onSubmit={handlerSubmit} className="m-1 p-5">
               <Form.Group className="mb-3" controlId="formBasicname">
                 <Form.Label style={{ color: "white" }}>{t("login.name")}</Form.Label>
                 <Form.Control type="text" name="name" placeholder={t("login.name")} />

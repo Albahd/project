@@ -135,15 +135,15 @@ function StoreBar() {
 
     return (
 
-        <Container fluid className="container-fav">
+        <Container  fluid className="container-fav" >
             <Row>
                 <Col xs={12} sm={9} md={8} lg={8}> 
 
                     <Card className="m-1 p-1"
-                        style={{ width: "100%", height: "100vh" }}>
+                        style={{ width: "100%", height: "100%" }}>
                         {defaultPosition !== undefined ?
                             <MapContainer
-                                style={{ width: "100%", height: "100%" }}
+                                style={{ width: "100%", height: "100%"}}
                                 center={defaultPosition}
                                 zoom={14}
                             >

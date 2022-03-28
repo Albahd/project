@@ -4,7 +4,7 @@
     background-image:url("../../assets/img/cajas.jpg");
     background-size: cover;
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 100vw;
     font-family:'highv';
     font-size: 20px;
 

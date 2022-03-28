@@ -12,7 +12,8 @@ import  Row from "react-bootstrap/Row"
 import './style.css'
 import { useTranslation } from 'react-i18next';
 import { useContext } from "react"
-import { IdiomContext } from "../../context/createcontext"
+import { IdiomContext } from "../../context/createcontext";
+import Navegador from "../navegador"
 
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 // import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -75,10 +76,14 @@ const [t, i18n] = useTranslation("global");
  
 
     return (
+      
     
             <div className="card-select-list">
                 <Container>
+              
             <Row xs={0} sm={1} lg={2}>
+                
+          
               
   
         {clasif.length === 0 ? <h1>cargando</h1> : clasif.map((v, i) =>{
@@ -92,7 +97,7 @@ const [t, i18n] = useTranslation("global");
          
          </Row>
          </Container>
-         </div>
+        //  </div>
    
     )
 

@@ -68,7 +68,7 @@ function Navegador() {
 
 
     <Navbar style={{ width: "100%" }} collapseOnSelect expand="lg" bg={theming.primary} variant={theming.dark}  className="nav" sticky="top" >
-      <Container>
+      <Container fluid >
       <Navbar.Brand >{logName.name}</Navbar.Brand>
         <Navbar.Brand as={Link} to="/">ViBeer{<img src={jarra} alt="" />}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -142,7 +142,7 @@ function Navegador() {
       </Container>
     </Navbar>
 
-
+  
 
 
   )

@@ -5,6 +5,7 @@ import  Row  from "react-bootstrap/Row";
 import  Container  from "react-bootstrap/Container";
 import CardBeer from "../../components/cardbeer";
 import './style.css';
+import Navegador from "../../components/navegador";
 
 
 function BeerFilter(){
@@ -25,7 +26,8 @@ function BeerFilter(){
     return(
 
 <div className="filter-card">
-<Container >
+<Container fluid >
+
   <Row>
 
      {cerveselect.length === 0 ? <h1>cargando</h1> : cerveselect.map((v, i) =>{
