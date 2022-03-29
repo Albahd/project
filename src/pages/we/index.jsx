@@ -81,8 +81,8 @@ function WeWho() {
                 </Carousel>
             </Col> 
             
-            <Col style={{padding:'0px'}} xs={12} sm={12} md={4} lg={4} xxl={4}> 
-                <Card style={{ backgroundColor: 'rgba(0,0,0,0.0)', color: 'white', border: 'none',padding:'2rem 2rem'}} className="d-flex justify-content-center" >
+            <Col style={{padding:'0px'}} xs={12} sm={12} md={4} lg={4} xxl={4} className="d-flex justify-content-center"> 
+                <Card style={{ backgroundColor: 'rgba(0,0,0,0.0)', color: 'white', border: 'none',padding:'2.5rem 2rem'}}   >
 
 
                     <p className="text-1">{t("who.w2")}</p>

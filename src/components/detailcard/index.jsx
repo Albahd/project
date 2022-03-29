@@ -3,7 +3,8 @@ import ListGroup from "react-bootstrap/ListGroup"
 import { Link } from "react-router-dom";
 import './style.css'
 
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function DetailCard(props) {
@@ -12,7 +13,7 @@ function DetailCard(props) {
         <div className="card-select">
             <Link to={`/beerfilter/${props.tag}`} state={props.beers} style={{ decoration: 'none', color: 'black' }}>
                 <Card className="select-img border-0" style={{ width: '28rem',backgroundColor:'transparent'}}>
-                    <Card.Img variant="center" src={props.img} className="select-img" />
+                    <LazyLoadImage scrollPosition={props.scrollPosition} effect="blur" width={448} src={props.img} className="select-img" />
 
                 </Card>
             </Link>

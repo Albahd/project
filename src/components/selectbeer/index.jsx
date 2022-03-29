@@ -13,10 +13,9 @@ import './style.css'
 import { useTranslation } from 'react-i18next';
 import { useContext } from "react"
 import { IdiomContext } from "../../context/createcontext";
+import {trackWindowScroll} from "react-lazy-load-image-component"
 
 
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-// import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 
@@ -68,7 +67,7 @@ const clasif = [
 
 
 
-function SelectBeer(props) {
+function SelectBeer(props,{scrollPosition}) {
     console.log(props.beers)
     const [lng, updateLng] = useContext(IdiomContext)
 const [t, i18n] = useTranslation("global");
@@ -89,7 +88,7 @@ const [t, i18n] = useTranslation("global");
         {clasif.length === 0 ? <h1>cargando</h1> : clasif.map((v, i) =>{
         
             return(
-        <DetailCard key={i} img={v.img} sent={v.sentence} beers={props.beers} tag={v.tag} >
+        <DetailCard scrollPosition={scrollPosition} key={i} img={v.img} sent={v.sentence} beers={props.beers} tag={v.tag} >
 
 
         </DetailCard>)}
@@ -103,7 +102,7 @@ const [t, i18n] = useTranslation("global");
 
 }
 
-export default SelectBeer
+export default trackWindowScroll(SelectBeer);
 
 
 
