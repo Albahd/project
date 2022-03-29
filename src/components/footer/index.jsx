@@ -12,6 +12,8 @@ import { IdiomContext } from "../../context/createcontext";
 import instagram from '../../assets/img/instagram.png';
 import facebook from '../../assets/img/facebook.png';
 import personas from '../../assets/img/personas.png';
+import priv from '../../assets/img/priv.png';
+import cookies from '../../assets/img/cookies.png';
 
 
 
@@ -38,10 +40,11 @@ function Footer() {
                 <Row>
 
 
-                    <Col sm={12} lg={7} style={{ fontFamily: 'highv' }}className="mt-1">
+                    <Col sm={12} lg={6} style={{ fontFamily: 'highv' }}className="mt-1">
                         {t("Footer.f1")}
                     </Col>
                     <Col sm={4} lg={2} style={{ fontFamily: 'highv' }}className="mt-1">
+                        
 
                         {t("Footer.f2")}
                     </Col>
@@ -59,6 +62,10 @@ function Footer() {
              </OverlayTrigger>
              
                     </Col>
+                    <Col sm={5} lg={1}  style={{ fontFamily: 'highv' }}>
+                    <Link to='/legal'>  <img src={priv} className="px-1" alt="" /> </Link> 
+                    <Link to='/legaltwo'>  <img src={cookies} className="px-1" alt="" /> </Link> 
+                     </Col>
 
                 </Row>
             </Container>

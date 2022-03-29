@@ -6,10 +6,11 @@ import './style.css'
 
 
 
-function Fav(props,{acdelete}){
+function Fav(props){
   const navigate = useNavigate()
+  console.log(props.acdelete)
   const handlerUpdate = (v) => {
-    acdelete(v)
+    props.acdelete(v)
 
   }
   const handleDeleteFav = () => {
@@ -23,6 +24,7 @@ function Fav(props,{acdelete}){
                 .then(data => {
                     console.log(data)
                     handlerUpdate(data)
+                    // window.location.reload()
     
                 })
     
