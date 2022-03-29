@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: repeat;
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 100vw;
     font-family:'highv';
 
 }
