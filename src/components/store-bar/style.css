@@ -1,11 +1,11 @@
 .container-fav{
-
-    padding-left: 10px;
+/* 
+    padding-left: 10px; */
     background-image:url("../../assets/img/anochecer.jpg");
     background-size: cover;
     background-repeat: repeat;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100vh;
     font-family:'highv';
 
 }

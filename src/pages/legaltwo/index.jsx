@@ -1,11 +1,12 @@
 import React from "react"
+import Container from 'react-bootstrap/Container'
 
 function LegalTwoPage() {
 
 
     return (
 
-        <React.Fragment>
+        <Container style={{fontFamily:'highv'}}>
         <h1>Cookies Policy</h1>
 <p>Last updated: March 29, 2022</p>
 <p>This Cookies Policy explains what Cookies are and how We use them. You should read this policy so You can understand what type of cookies We use, or the information We collect using Cookies and how that information is used. This Cookies Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-cookies-policy-generator/" target="_blank">Cookies Policy Generator</a>.</p>
@@ -67,7 +68,7 @@ function LegalTwoPage() {
 <li>By email: alegriadevibeer@gmail.com</li>
 </ul>
 
-</React.Fragment>
+</Container>
     )
 
 }

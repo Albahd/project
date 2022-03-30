@@ -1,11 +1,12 @@
 
 import React from "react"
+import Container from 'react-bootstrap/Container'
 
 function LegalPage() {
 
 
     return (
-        <React.Fragment>
+        <Container style={{fontFamily:'highv'}}>
         <h1>Privacy Policy</h1>
         <p>Last updated: March 29, 2022</p>
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -193,7 +194,7 @@ function LegalPage() {
         <ul>
         <li>By email: alegriadevibeer@gmail.com</li>
         </ul>
-        </React.Fragment>
+      </Container>
     )
 
 }

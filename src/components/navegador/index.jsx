@@ -142,7 +142,6 @@ function Navegador() {
       </Container>
     </Navbar>
 
-  
 
 
   )

@@ -8,6 +8,7 @@ import belga from "../../assets/img/belga.png"
 import DetailCard from "../detailcard"
 import Container  from "react-bootstrap/Container"
 import  Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 import './style.css'
 import { useTranslation } from 'react-i18next';
@@ -78,25 +79,30 @@ const [t, i18n] = useTranslation("global");
       
     
             <div className="card-select-list">
-                <Container>
+            
+      <Container>
+        
+            <Row>
+               
+          
               
-            <Row xs={0} sm={1} lg={2}>
                 
           
               
   
-        {clasif.length === 0 ? <h1>cargando</h1> : clasif.map((v, i) =>{
+        {clasif.length === 0 ? <h1>cargando</h1> : clasif.map((v, i) =>{ 
         
             return(
-        <DetailCard scrollPosition={scrollPosition} key={i} img={v.img} sent={v.sentence} beers={props.beers} tag={v.tag} >
+                <Col xs={12} sm={9} m={8} lg={6}> <DetailCard scrollPosition={scrollPosition} key={i} img={v.img} sent={v.sentence} beers={props.beers} tag={v.tag} >
 
 
-        </DetailCard>)}
+        </DetailCard>   </Col>)} 
          )}
-         
+     
          </Row>
          </Container>
-         </div>
+       
+        </div>
    
     )
 

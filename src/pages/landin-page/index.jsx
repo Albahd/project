@@ -19,8 +19,10 @@ function LandingPage() {
         <div className="body">
 
             <div className="main">
+        
+    
 
-                 <Container className="title" fluid>
+                  <Container className="title" fluid>
                     <Row className="display-5">
                         <h3 className="title-1">{t("landing.l1")}</h3>
 
@@ -41,14 +43,18 @@ function LandingPage() {
 
 
                     </Row>
+                
                 </Container> 
-            </div>
-
+                </div> 
+                 <Container className="footer" fluid>
+            <Row>
 
             <Footer></Footer>
-
-        </div>
-
+            </Row>
+            </Container>
+            </div> 
+         
+        
 
     )
 
