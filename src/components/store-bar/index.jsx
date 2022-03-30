@@ -123,7 +123,7 @@ function StoreBar() {
 
         <Container  fluid className="container-fav" >
             <Row>
-                <Col xs={12} sm={6} md={8} lg={8}> 
+                <Col xs={12} sm={7} md={8} lg={8}> 
 
                     <Card className="m-1 p-1"
                         style={{ width: "100%", height: "100vh" }}>
@@ -145,7 +145,7 @@ function StoreBar() {
 
                             </MapContainer> : ''} </Card>
                 </Col>
-                <Col xs={12} sm={6} md={4} lg={4}>
+                <Col xs={12} sm={5} md={4} lg={4}>
                     <Card className="m-1 p-1 d-flex flex-wrap  text-center justify-content-around" style={{ color: "white", width: "80%", height: "50%", backgroundColor: 'rgba(0,0,0,0.3)' }}>
                         <h1>Shop</h1>
                 
