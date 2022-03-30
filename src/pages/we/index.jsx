@@ -22,11 +22,11 @@ function WeWho() {
 
     return (
 
-        // <Container style={{ color: 'black', backgroundColor: 'rgba(0,0,0,0.8)', minHeight: '100vh', fontFamily: 'highv' }} className="d-flex justify-content-between" fluid>
-             <Row style={{ color: 'black', backgroundColor: 'rgba(0,0,0,0.8)', minHeight: '100vh', fontFamily: 'highv', fontSize:'18px' }}> 
+        <Container style={{ color: 'black', backgroundColor: 'rgba(0,0,0,0.8)', minHeight: '100vh', fontFamily: 'highv' }} className="d-flex justify-content-between" fluid>
+             <Row style={{ Width:'100%', fontFamily: 'highv', fontSize:'18px' }} className="bodywe"> 
 
 
-             <Col style={{padding:'0px'}}xs={12} sm={12} md={8} lg={7} xxl={7}> 
+             <Col style={{padding:'0px'}}xs={12} sm={12} md={12} lg={7} xxl={7}> 
 
                 <Carousel style={{margin:'0px', paddingTop:'2rem'}} fade>
                     <Carousel.Item>
@@ -81,7 +81,7 @@ function WeWho() {
                 </Carousel>
             </Col> 
             
-            <Col style={{padding:'0px'}} xs={12} sm={12} md={4} lg={4} xxl={4} className="d-flex justify-content-center"> 
+            <Col style={{padding:'0px'}} xs={12} sm={12} md={12} lg={4} xxl={4} className="d-flex justify-content-center"> 
                 <Card style={{ backgroundColor: 'rgba(0,0,0,0.0)', color: 'white', border: 'none',padding:'2.5rem 2rem'}}   >
 
 
@@ -102,7 +102,7 @@ function WeWho() {
             </Col> 
 
              </Row> 
-        // </Container>
+         </Container>
 
 
 
