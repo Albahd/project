@@ -16,7 +16,7 @@ function Fav(props){
   const handleDeleteFav = () => {
 
     
-            fetch(`http://localhost:4000/fav/${props.title}`, {
+            fetch(`https://floating-waters-34980.herokuapp.com/fav/${props.title}`, {
                 method: 'DELETE',
                 
             })

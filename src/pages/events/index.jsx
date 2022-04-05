@@ -22,7 +22,7 @@ let[ev, updateEvent] = useState([]);
 
 
 useEffect(() => {
-  fetch('http://localhost:4000/Events')
+  fetch('https://floating-waters-34980.herokuapp.com/Events')
     .then(j => j.json())
     .then(r => {
     

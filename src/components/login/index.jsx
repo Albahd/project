@@ -36,14 +36,14 @@ function Login() {
     // console.log(user)
     localStorage.setItem('username',logName.name)
 
-    fetch('http://localhost:4000/auth/login', {
+    fetch('https://floating-waters-34980.herokuapp.com/auth/login', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: { 'Content-Type': 'application/json' }
     })
       .then(d => d.json())
       .then((data) => {
-        fetch('http://localhost:4000/users', {
+        fetch('https://floating-waters-34980.herokuapp.com/users', {
           method: 'GET',
           // body: JSON.stringify(user),
           headers: { 'Authorization': `Bearer ${data.access_token}` }

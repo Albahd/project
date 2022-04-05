@@ -34,7 +34,7 @@ function UserRegister() {
 
     useEffect(() => {
 
-        fetch('http://localhost:4000/users', {
+        fetch('https://floating-waters-34980.herokuapp.com/users', {
             method: 'GET',
             headers: { 'Authorization': `Bearer ${token}` }
         })
@@ -52,7 +52,7 @@ function UserRegister() {
     const handleDelete = () => {
 
 
-        fetch('http://localhost:4000/users', {
+        fetch('https://floating-waters-34980.herokuapp.com/users', {
             method: 'DELETE',
             headers: { 'Authorization': `Bearer ${token}` }
         })
@@ -78,7 +78,7 @@ function UserRegister() {
 
         console.log(userData)
 
-        fetch(`http://localhost:4000/users/${id}`, {
+        fetch(`https://floating-waters-34980.herokuapp.com/users/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(userData),
             headers: { "Content-Type": "application/json", 'Authorization': `Bearer ${token}` }
@@ -98,7 +98,7 @@ function UserRegister() {
     }
 
     useEffect(() => {
-        fetch('http://localhost:4000/fav', {
+        fetch('https://floating-waters-34980.herokuapp.com/fav', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`

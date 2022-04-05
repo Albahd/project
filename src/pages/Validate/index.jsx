@@ -22,7 +22,7 @@ function Validate() {
 
    
     useEffect(() => {
-        fetch(`http://localhost:4000/auth/validate?token=${param}`)
+        fetch(`https://floating-waters-34980.herokuapp.com/auth/validate?token=${param}`)
             .then(d => d.json())
             .then(data => console.log(data))
 

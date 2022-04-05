@@ -34,7 +34,7 @@ function App() {
   let [beer, updatebeer] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/beer')
+    fetch('https://floating-waters-34980.herokuapp.com/beer')
       .then(j => j.json())
       .then(r => {
         // console.log(r)

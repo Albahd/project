@@ -54,7 +54,7 @@ function FormEvent({ actualizar }) {
 
     }
 console.log(event)
-    fetch('http://localhost:4000/Events', {
+    fetch('https://floating-waters-34980.herokuapp.com/Events', {
       method: 'POST',
       body: JSON.stringify(event),
       headers: { 'Content-Type': 'application/json' }

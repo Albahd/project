@@ -28,7 +28,7 @@ function CardBeer(props){
 
 
 
-    fetch('http://localhost:4000/fav', {
+    fetch('https://floating-waters-34980.herokuapp.com/fav', {
       method: 'POST',
       body: JSON.stringify(fav),
       headers: { 'Content-Type': 'application/json','Authorization': `Bearer ${token}` }

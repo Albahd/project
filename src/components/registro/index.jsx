@@ -40,13 +40,14 @@ function Register() {
 
 
     }
+    console.log(regis)
   
     // const userFormData = new FormData(e.target)
     // body: JSON.stringify(Object.fromEntries(userFormData))
     // console.log(user)  ESTA FORMA ES MEJOR QUE CREAR EL OBJETO.
 
 
-    fetch('http://localhost:4000/auth/register', {
+    fetch('https://floating-waters-34980.herokuapp.com/auth/register', {
       method: 'POST',
       body: JSON.stringify(regis),
       headers: { 'Content-Type': 'application/json' }
@@ -58,7 +59,8 @@ function Register() {
 
         UpdateData(...Userdata, regis)
         console.log(data)
-        navigate('/user');
+       
+        navigate('/');
 
       }
 
@@ -66,7 +68,6 @@ function Register() {
       )
 
   }
-
 
   return (
 
@@ -93,9 +94,9 @@ function Register() {
                 <Form.Control name="password" type="password" placeholder={t("login.rpassword")} />
               </Form.Group>
 
-             <Link to='/'> <Button variant={theming.primary} type="submit">
+             <Button variant={theming.primary} type="submit">
                 {t("login.boton")}
-              </Button></Link>
+              </Button>
 
             </Form>
           </Card>
